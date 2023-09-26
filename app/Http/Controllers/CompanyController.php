@@ -52,7 +52,6 @@ class CompanyController extends Controller
             'department_id'=>'required',
             'title'=>'string|nullable',
             'image'=>'required|image|mimes:jpeg,png,jpg,gif,svg|max:6096|dimensions:width=370,height=370',
-            'image_cover'=>'required|image|mimes:jpeg,png,jpg,gif,svg|max:6096',
          ]);
          $company = new Company;
          $company->department_id = $request->department_id;
@@ -67,15 +66,15 @@ class CompanyController extends Controller
             $company->image = 'company'.'/'.$filename;
          }
 
-          //image Cover
-          if($request->file('image_cover')){
+        //   //image Cover
+        //   if($request->file('image_cover')){
 
-            $image = $request->file('image_cover');
-            $filename = time().'_'.$image->getClientOriginalName();
-            $filename = str_replace(' ','-',$filename);
-            $image->move("images/company",$filename); //move to file
-            $company->image_cover = 'company'.'/'.$filename;
-         }
+        //     $image = $request->file('image_cover');
+        //     $filename = time().'_'.$image->getClientOriginalName();
+        //     $filename = str_replace(' ','-',$filename);
+        //     $image->move("images/company",$filename); //move to file
+        //     $company->image_cover = 'company'.'/'.$filename;
+        //  }
 
           $company->save();
          return redirect()->route('dashboard.company.list')->with('status', "add company created successfully");

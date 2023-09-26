@@ -50,7 +50,7 @@
                 <input type="file" class="mt-3" name="image" id="image">
             </div>
 
-            <div class="form-group col-md-4 mt-3">
+            {{-- <div class="form-group col-md-4 mt-3">
                 <h3>Image Cover</h3>
                 <label for="image">Recomended Size: 1920 X 650</label>
                 <!-- asset('assets/img/header-bg.jpg') -->
@@ -61,7 +61,7 @@
 
                 @endif
                 <input type="file" class="mt-3" name="image_cover" id="image_cover">
-            </div>
+            </div> --}}
         </div>
         <input type="submit" name="submit" class="btn btn-primary mt-1">
     </form>

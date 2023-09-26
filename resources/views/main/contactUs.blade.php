@@ -1,9 +1,10 @@
 @extends('layouts.user-layout')
 @section('content')
     <!-- page-title -->
-    <section class="page-title" style="background-image: url({{ asset('images'.'/'.$cover->cover_contact) }});top:0px;height:550px;width:auto;background-repeat: no-repeat;">
 
-    </section>
+    <div style="">
+        <img style="top:50px;height:auto;width:100%;background-repeat: no-repeat;" src="{{ asset('images/'.$cover->cover_contact) }}" alt="">
+    </div>
     <!-- page-title end -->
 
 
@@ -115,7 +116,7 @@
             <div class="row">
                 @if (count($addresses) >0)
                     @foreach ($addresses as $index=> $address)
-                    <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="card text-white mb-3" style="max-width: 18rem;background-color:#393C43">
                             <div class="card-header footer-title">Address {{ $index +1 }}</div>
 

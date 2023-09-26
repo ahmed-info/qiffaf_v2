@@ -5,7 +5,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
                     <div class="logo-widget footer-widget">
                         <figure class="footer-logo"><a href="index.html"><img src="{{ asset('temp/images/footer-logo.png') }}" alt=""></a></figure>
-                        <div class="text">we moved 2000 in Baghdad as a small Bureau, in 1991 Established in to Al-Qiffaf scientific company, today we are recognized as a leader in providing comprehensive Headquarter instruments and solutions for all kinds of labs</div>
+                        <div class="text">Our corporate policy consistently revolves around the pursuit of excellence in both product quality and service delivery. Alqiffaf Scientific Co. is committed to leveraging its technological prowess to furnish our esteemed clientele with the highest caliber of products, competitive pricing structures, a well-established sales infrastructure, and unparalleled post-sales support</div>
                         <ul class="footer-social clearfix">
                             <li><a href="{{ $social->facebook }}"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="{{ $social->youtube }}"><i class="fa fa-youtube fa-2x"></i></a></li>

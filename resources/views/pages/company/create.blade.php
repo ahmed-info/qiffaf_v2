@@ -60,7 +60,7 @@
                         @enderror
                     </div>
 
-                    <div class="form-group col-md-3 mt-3">
+                    {{-- <div class="form-group col-md-3 mt-3">
                         <h3>Image Cover</h3>
                         <label for="image_cover">Recomended Size: 1920 X 650</label>
                         <img style="height: 30vh" src="{{ asset('images/default.jpg') }}" class="img-thumbnail"
@@ -69,7 +69,7 @@
                         @error('image_cover')
                             <span class="text-danger">{{ $message }}</span>
                         @enderror
-                    </div>
+                    </div> --}}
 
                 </div>
                 <input type="submit" name="submit" class="btn btn-primary mt-1">
